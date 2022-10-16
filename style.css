@@ -1,0 +1,38 @@
+div{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    color: white;
+}
+
+.transition{
+    background-color: blueviolet;
+    transition: all 1s;
+}
+
+.transition:hover{
+    transform: translate(250px);
+    background-color: aqua;    
+}
+
+.animation{
+    background-color: cornflowerblue;
+    /* animation-name: movingAnimation; */
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: 1; */
+    animation: movingAnimation 10s infinite;
+}
+
+@keyframes movingAnimation{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(500px);
+        background-color: chartreuse;
+    }
+    100%{
+        transform: translate(0px);
+        background-color: darkblue;
+    }
+}
